@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<fieldset>
+			<legend>formulario html5</legend>
+			<form id="form1" action="demo_form.asp" method="get">
+				<datalist id="provincias">
+					<option value="A Coruña">
+					<option value="Lugo">
+					<option value="Ourense">
+					<option value="Pontevedra">
+				</datalist>
+				Color preferido: <input type="color" name="micolor" id="micolor"><br/>
+				Fecha de nacimiento:<br/>
+				<input type="date" name="fecha" id="fecha"><br/>
+				Provincia de nacimiento:<br/>
+				<input list="provincias" name="provNac"><br/>
+				Provincia de residencia:<br/>
+				<input list="provincias" name="provResid"><br/>
+				E-mail:<br/>
+				<input type="email" name="email" value="@gmail.com" autofocus multiple><br/>
+				url de las entregas:<br/>
+				<input type="url"​ name="miurl" id="miurl"><br/>
+				en qué mes empecé este curso: <br/>
+				<input type="month" name"mes_empecé" id="mes_empece"><br/>
+				edad <br/>
+				<input type="number" name="edad" id="edad" min="18" max="50" step="1" placeholder="99"><br/>
+				valoración del curso:<br/>
+				<input type="range" name="rango" min="0" max="10" step="5" ><br/>
+				datos a buscar:<br/>
+				<input type="search" name="busqueda"><br/>
+				Nombre *<br/>
+				<input type="text" name="Nombre" required><br/>
+				
+				<input type="submit" formmethod="get" formnovalidate value="Enviar método get y no validar"><br/>
+				<input type="submit" formmethod="get" formtarget="_blank"  value="Enviar y abrir en una ventana nueva"><br/>
+				<input type="image" src="http://www.lefemvzla.com/images/Boton-enviar.png" height="35" alt="submit">
+
+			
+			</form>
+		</fieldset>
+		FIN DEL FORMULARIO<br/>
+		<input type="checkbox" name="envinfo" form="form1" checked>
+		Enviar información
+	</body>
+</html>
